@@ -1,4 +1,4 @@
-# Asset-List-Grabber
+# Asset List Grabber
 
 ## What is this?
 
@@ -50,9 +50,11 @@ I advise you set the seperator to the same as the one used in the javascript cod
 
 ## Instructions
 
-1. Paste the javascript code above, into the console of your browser.
-2. Execute the code.
-3. Copy the output from the console.
-4. Paste the output into a spreadsheet.
-5. Apply the excel code above to the spreadsheet, to seperate the author and asset name.
-6. Done!
+1. Navigate to Unity Asset Store > My Assets.
+2. Set the Total per page to 100.
+3. Paste the javascript code above, into the console of your browser.
+4. Execute the code.
+5. Copy the output from the console. If you have more assets, load the next page and repeat.
+6. Paste the output into a spreadsheet.
+7. Apply the excel code above to the spreadsheet, to seperate the author and asset name.
+8. Done!
