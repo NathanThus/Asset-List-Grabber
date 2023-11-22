@@ -14,7 +14,8 @@ I made this, so that I could personally keep track of the assets I have purchase
 var authorClassName = "_1x95x"; // This is the *Current* classname used by the author divs.
 var assetClassName = "_161YN _30Ec_"; // This is the *Current* classname used by the asset divs.
 // The seperator the code will use. Keep in mind, some assets use a dash in their name.
-var seperator = "|"; 
+var rowSeparator = "$";
+var columnSeparator = "#";
 
 
 var authorList = document.getElementsByClassName(authorClassName);
@@ -26,7 +27,7 @@ var completeString = "";
 
 for(let i = 0; i < authorList.length && i < assetList.length; i++)
 {
-    completeString += (authorList[i].text + seperator + assetList[i].textContent + '\n');
+    completeString += (authorList[i].text + rowSeparator + assetList[i].textContent + columnSeparator);
 }
 
 console.log(completeString);
@@ -37,13 +38,7 @@ console.log(completeString);
 *Excel:*
 
 ```js
-=TEXTSPLIT(A1;"|")
-```
-
-*Google Sheets:*
-
-```js
-=SPLIT(A1,"|")
+=TEXTSPLIT(A1; "$";"#";)
 ```
 
 I advise you set the seperator to the same as the one used in the javascript code, and set the location (A1) to the cell containing the author and asset name.
