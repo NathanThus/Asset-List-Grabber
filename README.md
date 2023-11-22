@@ -33,7 +33,7 @@ for(let i = 0; i < authorList.length && i < assetList.length; i++)
 console.log(completeString);
 ```
 
-### Excel / Google Sheets
+### Excel
 
 *Excel:*
 
