@@ -35,8 +35,6 @@ console.log(completeString);
 
 ### Excel
 
-*Excel:*
-
 ```js
 =TEXTSPLIT(A1; "$";"#";)
 ```
