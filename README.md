@@ -14,7 +14,7 @@ I made this, so that I could personally keep track of the assets I have purchase
 var authorClassName = "_1x95x"; // This is the *Current* classname used by the author divs.
 var assetClassName = "_161YN _30Ec_"; // This is the *Current* classname used by the asset divs.
 // The seperator the code will use. Keep in mind, some assets use a dash in their name.
-var seperator = " || "; 
+var seperator = "|"; 
 
 
 var authorList = document.getElementsByClassName(authorClassName);
