@@ -7,7 +7,7 @@ I made this, so that I could personally keep track of the assets I have purchase
 
 ## Code Snippets
 
-### Javascript
+### Javascript (For exporting to Excel)
 
 ```javascript
 // Feel free to change any of this.
@@ -16,6 +16,32 @@ var assetClassName = "_161YN _30Ec_"; // This is the *Current* classname used by
 // The seperator the code will use. Keep in mind, some assets use a dash in their name.
 var rowSeparator = "$";
 var columnSeparator = "#";
+
+
+var authorList = document.getElementsByClassName(authorClassName);
+
+var assetList = 
+document.getElementsByClassName(assetClassName);
+
+var completeString = "";
+
+for(let i = 0; i < authorList.length && i < assetList.length; i++)
+{
+    completeString += (authorList[i].text + rowSeparator + assetList[i].textContent + columnSeparator);
+}
+
+console.log(completeString);
+```
+
+### Javascript (For easy PlainText
+
+```javascript
+// Feel free to change any of this.
+var authorClassName = "_1x95x"; // This is the *Current* classname used by the author divs.
+var assetClassName = "_161YN _30Ec_"; // This is the *Current* classname used by the asset divs.
+// The seperator the code will use. Keep in mind, some assets use a dash in their name.
+var rowSeparator = " || ";
+var columnSeparator = "\n";
 
 
 var authorList = document.getElementsByClassName(authorClassName);
