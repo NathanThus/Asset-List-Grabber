@@ -33,7 +33,7 @@ for(let i = 0; i < authorList.length && i < assetList.length; i++)
 console.log(completeString);
 ```
 
-### Javascript (For easy PlainText
+### Javascript (For easy PlainText export)
 
 ```javascript
 // Feel free to change any of this.
